@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.cheeh.findmyfriend"
+        minSdkVersion 27
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:2.0.2'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Firebase dependencies
+    implementation 'com.google.firebase:firebase-database:16.0.6'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+
+    //
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    //Dexter is an Android library that simplifies the process of requesting permissions at runtime.
+    //Android Marshmallow includes a new functionality to let users grant or deny permissions when running an app instead of granting them all when installing it.
+    //This approach gives the user more control over applications but requires developers to add lots of code to support it.
+    //Dexter frees your permission code from your activities and lets you write that logic anywhere you want.
+    //Permission Manager
+    implementation 'com.karumi:dexter:5.0.0'
+
+    //
+    implementation 'com.firebaseui:firebase-ui-database:4.3.1'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+
+    //
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    //Google Map Service
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //Search Bar
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+
+    //RxJava2
+    /*ReactiveX, also known as Reactive Extensions or RX,
+    is a library for composing asynchronous and event-based programs by using observable sequences.
+    This is perfect for Android, which is an event-driven and user-focused platform.
+     */
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+    //Retrofit2
+    /*Retrofit is a REST Client for Java and Android.
+    It makes easy to retrieve and upload JSON (or other structured data) via a REST based webservice.
+    In Retrofit, user able to configure which converter is used for the data serialization.
+    Typically for JSON user use GSon, but also can add custom converters to process XML or other protocols.
+    Retrofit uses the OkHttp library for HTTP requests.*/
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    /*paperdb is a fast NoSQL-like storage for Java/Kotlin objects on Android with automatic schema migration support.
+    a simple yet fast object storage option for Android. It allows to use Java/Kotlin classes as is:
+    without annotations, factory methods, mandatory class extensions etc.
+    All data structure changes are handled automatically when adding or removing fields to data classes
+    It saves any object, Map, List, HashMap etc. including all internal objects.*/
+    implementation 'io.paperdb:paperdb:2.7.1'
+
+}
+apply plugin: 'com.google.gms.google-services'
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

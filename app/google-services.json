@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043866781907",
+    "firebase_url": "https://findu-73226.firebaseio.com",
+    "project_id": "findu-73226",
+    "storage_bucket": "findu-73226.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043866781907:android:9d4dd38344f947fe8eec26",
+        "android_client_info": {
+          "package_name": "com.example.cheeh.findmyfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043866781907-epuh9ahkv0r1cv4ibsejocv18i750g8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cheeh.findmyfriend",
+            "certificate_hash": "b09e82dce694cf258e84d4e67ea9dd9c80080a00"
+          }
+        },
+        {
+          "client_id": "1043866781907-uegssfp23pfv85qaipbq4t3q4lf5o4g8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnRfrLjc_IP25lXOpwag8Ds3q2-W2vM6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043866781907-uegssfp23pfv85qaipbq4t3q4lf5o4g8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
